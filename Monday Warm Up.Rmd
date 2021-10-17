@@ -1,0 +1,82 @@
+---
+title: "Monday Warm Up"
+author: "Joey"
+date: "Monday, 10/18/2021"
+output: html_document
+---
+
+```{r load packages, message=FALSE}
+library(tidyverse)
+library(openintro) 
+```
+## 1. Problem Solving Code Chunk Labels
+
+Here, we'll be looking at the earthquakes dataset that we used in Lab 4. The first step is to see a glimpse of the data in the knitted markdown file. 
+
+I've provided the code, but what did I do wrong? 
+
+More specifically, what's the fix?
+
+```{r evaluating data, eval = F}
+glimpse(earthquakes)
+```
+
+```{r evaluating data, eval = F}
+glimpse(earthquakes)
+```
+
+## 2. group_by
+
+```{r earthquakes per year, eval = TRUE}
+#Missing code, how many earthquakes per year?
+
+  
+```
+
+## 3. Creating earthquakes2
+
+```{r creating earthquakes2, eval = FALSE}
+#Missing code...
+
+
+#glimpse() provided  
+glimpse(earthquakes2)
+
+```
+
+## 3.2. Creating earthquakes3
+
+
+```{r creating earthquakes 3, eval = FALSE}
+#Only earthquakes with richter > 7.5, code provided
+earthquakes3 <- earthquakes %>% 
+  filter(richter > 7.5)
+
+print(earthquakes3)
+```
+
+
+## 4. Joining earthquakes2 and earthquakes3
+
+```{r joining and viewing joins, eval = FALSE}
+
+#Join code is provided
+earthquakes_23_left <- earthquakes2 %>%
+  left_join(earthquakes3)
+
+earthquakes_23_right <- earthquakes2 %>%
+  right_join(earthquakes3)
+
+#Data
+head(earthquakes2)
+head(earthquakes3)
+
+#Left join
+print(earthquakes_23_left)
+
+#Right Join
+print(earthquakes_23_right)
+
+```
+
+
