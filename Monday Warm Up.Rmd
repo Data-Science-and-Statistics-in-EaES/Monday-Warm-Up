@@ -5,7 +5,7 @@ date: "Monday, 10/18/2021"
 output: html_document
 ---
 
-```{r load packages, message=FALSE}
+```{r load-packages, message=FALSE}
 library(tidyverse)
 library(openintro) 
 ```
@@ -17,25 +17,27 @@ I've provided the code, but what did I do wrong?
 
 More specifically, what's the fix?
 
-```{r evaluating data, eval = F}
+```{r evaluating-data, eval = F}
 glimpse(earthquakes)
 ```
 
-```{r evaluating data, eval = F}
+```{r evaluating-data, eval = F}
 glimpse(earthquakes)
 ```
 
 ## 2. group_by
 
-```{r earthquakes per year, eval = TRUE}
+```{r earthquakes-per-year, eval = TRUE}
 #Missing code, how many earthquakes per year?
 
   
 ```
 
+We could also do this using **`count()`**, but that's not what we're asking for here!
+
 ## 3. Creating earthquakes2
 
-```{r creating earthquakes2, eval = FALSE}
+```{r creating-earthquakes2, eval = FALSE}
 #Missing code...
 
 
@@ -47,7 +49,7 @@ glimpse(earthquakes2)
 ## 3.2. Creating earthquakes3
 
 
-```{r creating earthquakes 3, eval = FALSE}
+```{r creating-earthquakes-3, eval = FALSE}
 #Only earthquakes with richter > 7.5, code provided
 earthquakes3 <- earthquakes %>% 
   filter(richter > 7.5)
@@ -58,7 +60,7 @@ print(earthquakes3)
 
 ## 4. Joining earthquakes2 and earthquakes3
 
-```{r joining and viewing joins, eval = FALSE}
+```{r joining-and-viewing-joins, eval = FALSE}
 
 #Join code is provided
 earthquakes_23_left <- earthquakes2 %>%
