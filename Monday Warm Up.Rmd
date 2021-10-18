@@ -33,7 +33,7 @@ glimpse(earthquakes)
   
 ```
 
-We could also do this using **`count()`**, but that's not what we're asking for here!
+We could also do this using **`count()`**, but that's not what we're asking for here! `summarize()` allows you to compute many different summary statistics of your data, such as mean, median.
 
 ## 3. Creating earthquakes2
 
